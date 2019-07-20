@@ -127,7 +127,7 @@ body {
 }
 
 .listcolumn li {
-    background: url(img/plus.png) left top no-repeat;
+    background: url(img/plus.png) left 5px no-repeat;
     list-style: none;
     line-height: 25px;
     margin-bottom: 15px;
