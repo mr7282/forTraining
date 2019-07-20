@@ -1,72 +1,143 @@
-.content {
+body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+}
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header {
     width: 1280px;
-    height: 323px;
     display: flex;
     justify-content: space-between;
     background-color: #445162;
+    padding-bottom: 50px;
 }
 
 .name {
-    margin:30px;
+    margin-left: 50px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .name h1 {
-  font-size: 35px;
-  font-family: "Arial";
-  color: #fff; 
-  text-shadow: 0px 5px 0px #000;
+    font-size: 35px;
+    font-family: "Arial";
+    color: #fff;
+    text-shadow: 0px 5px 0px #000;
 }
 
 .name ul {
-    list-style-image:url();
+    list-style-image: url(img/tick.png);
+    font-size: 20px;
+    line-height: 36px;
+    color: #fff;
+    font-family: "Arial";
 }
 
 .logo {
     align-self: center;
-    margin-right: 45px;
+    margin-right: 50px;
     width: 469px;
     height: 214px;
     background-color: #fff;
 }
 
 .about {
-     width: 1280px;
-    height: 323px;
+    width: 1280px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abouttext h2 {
+    margin-left: 50px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    font-family: "Arial";
+}
+
+.abouttext p {
+    margin-left: 50px;
+    width: 665px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Arial";
+}
+
+.video {
+    margin-right: 50px;
+    width: 430px;
+    height: 245px;
+    background-color: #445162;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;    
+}
+
+.videotext {
+    margin-top: 100px;
 }
 
 .pluses {
-     width: 1280px;
-    height: 420px;
-    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 1280px;
+    padding-bottom: 50px;
     background-color: #f5f5f5;
 }
 
+.headline {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    font-family: "Arial";
+}
+
+.listcolumn {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+
+.rightcolumn {
+    
+    border: 1px solid #000;
+}
+
+.leftcolumn {
+    border: 1px solid #000;
+}
+
 .screenshots {
-     width: 1280px;
+    width: 1280px;
     height: 480px;
     display: flex;
-    
+
 }
 
 .reviews {
-     width: 1280px;
+    width: 1280px;
     height: 480px;
     display: flex;
     background-color: #f5f5f5;
 }
 
 .buy {
-     width: 1280px;
+    width: 1280px;
     height: 656px;
     display: flex;
 }
