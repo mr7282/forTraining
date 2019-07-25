@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-.header {
+header {
     width: 1280px;
     display: flex;
     justify-content: space-between;
@@ -81,7 +81,7 @@ body {
     background-color: #445162;
     font-size: 35px;
     color: #fff;
-    text-align: center;    
+    text-align: center;
 }
 
 .videotext {
@@ -123,7 +123,8 @@ body {
     padding-left: 15px;
 }
 
-.listcolumn ul, li{    
+.listcolumn ul,
+li {
     padding: 0;
 }
 
@@ -148,7 +149,7 @@ body {
     justify-content: center;
 }
 
-.rightblock {    
+.rightblock {
     width: 50%;
     padding-right: 15px;
 }
@@ -178,7 +179,7 @@ body {
     line-height: 18px;
     color: #333333;
     font-family: "Arial";
-    
+
 }
 
 .textblock p {
@@ -225,7 +226,7 @@ body {
 .setbuy {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;    
+    align-items: flex-end;
 }
 
 .setconteiner {
@@ -235,7 +236,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid #445161;
-    
+
 }
 
 .setname {
@@ -264,7 +265,7 @@ body {
 .description {
     display: flex;
     align-content: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
@@ -307,7 +308,7 @@ body {
     background-color: #445162;
 }
 
-.footer {
+footer {
     height: 35px;
     width: 1280px;
     display: flex;
