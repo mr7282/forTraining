@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="zxx">  <!--при использовании данного макета изменить на соответствующую кодировку добавил новою фичу-->
+<html lang="zxx">
+<!--при использовании данного макета изменить на соответствующую кодировку добавил новою фичу-->
+
 <head>
     <meta charset="UTF-8">
     <title>inex.html</title>
@@ -199,18 +201,36 @@
                     </div>
                 </div>
             </div>
-            <div class="contact">
-                <div class="formblock">
-                    <form action="#">
-                        <fieldset>
-                            <input type="text" name="name" id="name" value="Ваше имя:">
-                            <input type="email">
-                            <input type="textarea">
-                        </fieldset>
-                    </form>
+            <section class="contact">
+                <div class="headlinecontact">Контакты</div>
+                <div class="mainblockcontact">
+                    <div class="formblock">
+                        <form action="#">
+                            <div class="input">
+                                <input type="text" name="name" id="name" placeholder="Ваше имя:">
+                            </div>
+                            <div class="input">
+                                <input type="email" placeholder="Ваш e-mail:">
+                            </div>
+                            <div class="input">
+                                <textarea id="textarea" rows="8" placeholder="Ваш сообщение:" name="massege"></textarea>
+                            </div>
+                            <div class="input">
+                                <button>Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contactblock">
+                        <ul>
+                            <li><img src="img/skype%20icon.png" alt="skype"> 000-000-000</li>
+                            <li><img src="img/icq%20icon.png" alt="icq"> 123456789</li>
+                            <li><img src="img/email%20icon.png" alt="email"> <a href="mailto:your@email.com">your@email.com</a></li>
+                            <li><img src="img/phone%20icon.png" alt="telefone"> +7 (000) 000-00-00</li>
+                            <li><a href="#"><img src="img/twitter.png" alt="twitter"></a><a href="#"><img src="img/facebook.png" alt="facebook"></a><a href="#"><img src="img/linkedin.png" alt="linkedin"></a><a href="#"><img src="img/google.png" alt="google"></a><a href="#"><img src="img/youtube.png" alt="youtube"></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="contactblock"></div>
-            </div>
+            </section>
         </main>
         <footer>
             <div class="footertext">
@@ -219,4 +239,6 @@
         </footer>
 
     </div>
-</body></html>
+</body>
+
+</html>
