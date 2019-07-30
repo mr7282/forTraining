@@ -302,10 +302,90 @@ li {
 }
 
 .contact {
+    padding-top: 50px;
     width: 1280px;
     height: 509px;
-    display: flex;
     background-color: #445162;
+}
+
+.mainblockcontact {
+    display: flex;
+    justify-content: center;
+}
+
+.formblock {
+    display: flex;
+}
+
+.input input {
+    padding: 10px 10px 10px;
+    display: flex;
+    width: 480px;
+    height: 20px;
+    margin-bottom: 21px;
+    border-radius: 10px; 
+    font-size: 16px;
+    line-height: 24px;
+    color: #445162;
+    font-family: "Arial";
+}
+
+.input textarea {
+    padding: 10px 10px 10px;
+    display: flex;
+    width: 480px;
+    margin-bottom: 21px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #445162;
+    font-family: "Arial";
+    resize: none;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 180px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #445162;
+    font-family: "Arial";
+    font-weight: bold;
+}    
+
+.headlinecontact {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+    font-family: "Arial";
+}
+
+.contactblock ul {
+    list-style: none;
+}
+
+.contactblock ul li {
+    margin-bottom: 20px;
+    line-height: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
+.contactblock ul li a {
+    margin-right: 3px;
+    margin-bottom: 20px;
+}
+
+.contactblock ul li a:hover {
+    opacity: 0.8;
 }
 
 footer {
