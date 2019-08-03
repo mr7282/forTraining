@@ -1,0 +1,93 @@
+$width-main: 1280px
+
+body
+    width: $width-main
+    margin: 0 auto
+
+header
+    width: $width-main
+    margin: 0 auto
+    position: relative
+
+.bd-example
+    position: relative
+    width: $width-main
+    margin: 0 auto
+    display: flex
+    background-color: #000
+
+.slogan
+    text-align: center
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: centr
+    color: #fff
+    width: 450px
+    height: 300px
+    position: absolute
+    z-index: 3
+    top: 45%
+    left: 35%
+    button
+        margin-top: 15px
+        width: 50%
+        border-radius: 7.5px
+        font-family: 'Montserrat Alternates', sans-serif
+        font-weight: 400
+        background-color: #998675
+    h3
+        font-family: 'Montserrat Alternates', sans-serif
+        font-weight: 400
+    h1
+        font-family: 'Montserrat Alternates', sans-serif
+        font-weight: 700
+    p
+        font-family: 'Montserrat Alternates', sans-serif
+        font-weight: 400
+    
+.background
+    position: absolute
+    z-index: 2
+    width: $width-main
+    height: 100%
+    background-color: #000
+    opacity: 0.4
+
+nav
+    font-size: 14px
+    font-family: 'Montserrat Alternates', sans-serif
+    z-index: 3
+    font-size:  12px
+    position: absolute
+    top: 35px
+    right: 150px
+    display: flex
+    align-items: center
+    justify-content: center
+    .menuitems
+        margin-right: 15px
+    a
+        text-decoration: none
+        color: #ffffff
+    a:hover
+        text-decoration: none
+        color: #c7b299
+    .logo
+        margin-right: 150px
+
+.carousel-control-next
+    position: absolute
+    top: 50%
+    height: 100px
+    
+.carousel-control-prev
+    position: absolute
+    top: 50%
+    height: 100px
+
+.services
+    display: flex
+    flex-direction: row
+    section
+        width: 270px

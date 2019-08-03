@@ -1,0 +1,141 @@
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bd-example {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+}
+
+.slogan {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: centr;
+      -ms-flex-pack: centr;
+          justify-content: centr;
+  color: #fff;
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  z-index: 3;
+  top: 45%;
+  left: 35%;
+}
+
+.slogan button {
+  margin-top: 15px;
+  width: 50%;
+  border-radius: 7.5px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  background-color: #998675;
+}
+
+.slogan h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+.slogan h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+}
+
+.slogan p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+.background {
+  position: absolute;
+  z-index: 2;
+  width: 1280px;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
+
+nav {
+  font-size: 14px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  z-index: 3;
+  font-size: 12px;
+  position: absolute;
+  top: 35px;
+  right: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menuitems {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #c7b299;
+}
+
+nav .logo {
+  margin-right: 150px;
+}
+
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.services section {
+  width: 270px;
+}
+/*# sourceMappingURL=style.css.map */
