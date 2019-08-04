@@ -69,7 +69,7 @@ header {
 }
 
 .slogan button:hover {
-  background-color: #fff;
+  opacity: 0.8;
 }
 
 .background {
@@ -248,5 +248,80 @@ nav .logo {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.middleline {
+  background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background: linear-gradient(to right, #211b19, #4e3427);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middleline .textbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middleline .textbutton .middletext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #b9b5b4;
+}
+
+.middleline .textbutton .middletext h3 {
+  font-size: 22px;
+}
+
+.middleline .textbutton .middletext h3 b {
+  color: #93816f;
+  font-weight: 400;
+}
+
+.middleline .textbutton button {
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #998675;
+  border: 1px solid #000;
+  border-radius: 7.5px;
+  color: #b9b5b4;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+}
+
+.middleline .textbutton button:hover {
+  opacity: 0.8;
+}
+
+.vidocontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1280px;
 }
 /*# sourceMappingURL=style.css.map */
