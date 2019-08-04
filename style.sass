@@ -16,6 +16,7 @@ header
     display: flex
     background-color: #000
 
+
 .slogan
     text-align: center
     display: flex
@@ -36,6 +37,7 @@ header
         font-family: 'Montserrat Alternates', sans-serif
         font-weight: 400
         background-color: #998675
+        border: 1px solid #000
     h3
         font-family: 'Montserrat Alternates', sans-serif
         font-weight: 400
@@ -45,6 +47,8 @@ header
     p
         font-family: 'Montserrat Alternates', sans-serif
         font-weight: 400
+    button:hover
+        background-color: #fff
     
 .background
     position: absolute
@@ -77,17 +81,87 @@ nav
         margin-right: 150px
 
 .carousel-control-next
+    z-index: 3
     position: absolute
     top: 50%
     height: 100px
     
 .carousel-control-prev
+    z-index: 3
     position: absolute
     top: 50%
     height: 100px
 
-.services
+.servicesbox
     display: flex
     flex-direction: row
-    section
-        width: 270px
+    justify-content: center
+    a
+        text-decoration: none
+
+        .services-item        
+            flex-direction: column
+            margin: 50px 20px
+            width: 270px
+            justify-content: center
+            align-items: center
+            text-align: center
+            color: #555555
+
+
+            h3
+            font-family: 'Montserrat Alternates', sans-serif
+            font-weight: 400
+
+            p
+            font-family: 'Montserrat Alternates', sans-serif
+            font-weight: 400
+
+            .logoservices
+                color: #555555
+
+            .bottomline
+                display: flex
+                height: 20px
+                justify-content: center
+                
+                .line
+                    display: flex
+                    height: 20px                
+                    width: 70px
+                    border-bottom: 3px solid #555555
+            
+        .services-item:hover .line
+            color: #c7b299
+            border-bottom: 3px solid #c7b299
+        .services-item:hover
+            color: #c7b299
+
+.realization
+    display: flex
+    width: $width-main
+    height: 700px
+    background-color: #fbfaf8
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    .headline
+        margin-top: 80px
+        width: 500px 
+        display: flex
+        flex-direction: column
+        align-self: center
+        text-align: center
+        h1
+            font-family: 'Montserrat Alternates', sans-serif
+            font-weight: 700
+            font-size: 22px
+
+
+    .screenshot
+        display: flex
+        align-self: center
+        
+
+
+    
