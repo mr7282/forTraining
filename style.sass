@@ -1,5 +1,64 @@
 $width-main: 1280px
 
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-1 
+  0% 
+    -webkit-transform: translate(0)
+            transform: translate(0)
+  
+  20% 
+    -webkit-transform: translate(-2px, 2px)
+            transform: translate(-2px, 2px)
+  
+  40% 
+    -webkit-transform: translate(-2px, -2px)
+            transform: translate(-2px, -2px)
+  
+  60% 
+    -webkit-transform: translate(2px, 2px)
+            transform: translate(2px, 2px)
+  
+  80% 
+    -webkit-transform: translate(2px, -2px)
+            transform: translate(2px, -2px)
+  
+  100% 
+    -webkit-transform: translate(0)
+            transform: translate(0)
+  
+
+@keyframes vibrate-1 
+  0% 
+    -webkit-transform: translate(0)
+            transform: translate(0)
+  
+  20% 
+    -webkit-transform: translate(-2px, 2px)
+            transform: translate(-2px, 2px)
+  
+  40% 
+    -webkit-transform: translate(-2px, -2px)
+            transform: translate(-2px, -2px)
+  
+  60% 
+    -webkit-transform: translate(2px, 2px)
+            transform: translate(2px, 2px)
+  
+  80% 
+    -webkit-transform: translate(2px, -2px)
+            transform: translate(2px, -2px)
+  
+  100% 
+    -webkit-transform: translate(0)
+            transform: translate(0)
+  
+
+
+
 body
     width: $width-main
     margin: 0 auto
@@ -48,6 +107,8 @@ header
         font-family: 'Montserrat Alternates', sans-serif
         font-weight: 400
     button:hover
+        transform: scale(1.1)
+        transition: all 1s
         opacity: 0.8
     
 .background
@@ -75,6 +136,7 @@ nav
         text-decoration: none
         color: #ffffff
     a:hover
+        transition: color 1s
         text-decoration: none
         color: #c7b299
     .logo
@@ -132,9 +194,12 @@ nav
                     border-bottom: 3px solid #555555
             
         .services-item:hover .line
+            transition: color 1s
             color: #c7b299
             border-bottom: 3px solid #c7b299
-        .services-item:hover
+        .services-item:hover            
+	        animation: vibrate-1 0.3s linear 2 both
+            transition: color 1s
             color: #c7b299
 
 .realization
@@ -197,7 +262,39 @@ nav
             font-family: 'Montserrat Alternates', sans-serif
             font-weight: 500
         button:hover
+            transform: scale(1.1)
+            transition: all 1s
             opacity: 0.8
+
+.pictureboxtop
+    display: flex
+    width: $width-main
+    .pictureitem
+        width: 100%
+        display: flex
+        margin: 50px 
+
+        figurecaption
+            display: flex
+            height: 150px
+            border: 1px solid #000
+
+.pictureboxbottom
+    display: flex
+    width: $width-main
+    justify-content: center
+    align-items: center
+    .pictureitem
+        width: 100%
+        display: flex
+        margin: 50px 
+
+        figurecaption
+            display: flex
+            height: 150px
+            border: 1px solid #000
+
+
 
 .vidocontent
     display: flex

@@ -1,3 +1,62 @@
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    -webkit-transform-transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    -webkit-transform-transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    -webkit-transform-transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    -webkit-transform-transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    -webkit-transform-transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    -webkit-transform-transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    -webkit-transform-transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    -webkit-transform-transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+}
+
 body {
   width: 1280px;
   margin: 0 auto;
@@ -69,6 +128,10 @@ header {
 }
 
 .slogan button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0.8;
 }
 
@@ -110,6 +173,8 @@ nav a {
 }
 
 nav a:hover {
+  -webkit-transition: color 1s;
+  transition: color 1s;
   text-decoration: none;
   color: #c7b299;
 }
@@ -194,12 +259,17 @@ nav .logo {
 }
 
 .servicesbox a .services-item:hover .line {
+  -webkit-transition: color 1s;
+  transition: color 1s;
   color: #c7b299;
   border-bottom: 3px solid #c7b299;
 }
 
 .servicesbox a .services-item:hover {
-  color: #c7b299;
+  -webkit-animation: vibrate-1 0.3s linear 2 both;
+          animation: vibrate-1 0.3s linear 2 both;
+  animation-transition: color 1s;
+  animation-color: #c7b299;
 }
 
 .realization {
@@ -315,7 +385,63 @@ nav .logo {
 }
 
 .middleline .textbutton button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0.8;
+}
+
+.pictureboxtop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1280px;
+}
+
+.pictureboxtop .pictureitem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+}
+
+.pictureboxtop .pictureitem figurecaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+.pictureboxbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1280px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pictureboxbottom .pictureitem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+}
+
+.pictureboxbottom .pictureitem figurecaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  border: 1px solid #000;
 }
 
 .vidocontent {
