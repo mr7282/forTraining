@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sort"
 	// "sort"
 )
 
@@ -12,6 +11,23 @@ import (
 // }
 
 func main()  {
-	slice := []byte("daubvweriouvbvsdk"))
-	fmt.Printf("slice: %v\n", slice)
+	slice := []byte("aaabbbccccc")
+
+	type totalItem []byte
+	var total []totalItem
+
+	for iLetter, letter := range slice {
+		for _, equal := range slice[iLetter + 1:] {
+			var letterCount []byte
+			if letter == equal {
+				letterCount = append(letterCount, letter)
+				slice = append(slice[:iLetter], slice[iLetter + 1:]...)
+
+			}
+			fmt.Printf("letterCount: %v\n", letterCount)
+			total = append(total, letterCount)
+		}
+	}
+	
+	fmt.Printf("slice: %v\n", total)
 }
