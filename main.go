@@ -2,25 +2,40 @@ package main
 
 import (
 	"fmt"
+	"sort"
+	"strconv"
 )
 
 func main()  {
-	slice := []byte("aaabbbccccc")
+	input := Counter("zzzzccc44444UUUuu")
+	fmt.Printf("Output: %v\n", input)
+}
 
-	type totalItem []byte
-	var total []totalItem
+
+func Counter(s string) string {
+	// Представляем строку полученную на вход в виде среза рун
+	slice := []rune(s)
+	// total - сохранение промежуточных результатов для итогового вывода
+	var total string
 	
-	for iLetter, letter := range slice {
-		var letterCount []byte
-		for _, equal := range slice[iLetter + 1:] {
-			if letter == equal  {
-				letterCount = append(letterCount, equal)
-				slice = append(slice[:iLetter], slice[iLetter + 1:]...) 
-			}
-			fmt.Printf("letterCount: %v\n", letterCount)
+	// Сортировка среза рун
+	sort.SliceStable(slice, func(i, j int) bool {
+		return slice[i] < slice[j]
+	})
+	
+	for _, letter := range slice {
+		// countLetter - переменная для подсчета количества совпадений рун
+		var countLetter []rune
+		
+		if letter != 0 {
+			for iEqual, equal := range slice {
+				if letter == equal {
+					countLetter = append(countLetter, equal)
+					slice[iEqual] = rune(0)
+				}
+			}	
+			total = total + string(letter) + strconv.Itoa(len(countLetter))
 		}
-		total = append(total, letterCount)
 	}
-	
-	fmt.Printf("slice: %v\n", total)
+	return total
 }
